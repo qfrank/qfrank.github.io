@@ -1,0 +1,77 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+html, body {
+    padding: 2px;
+    height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-placeholder {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.body-placeholder{
+    flex: 1;
+}
+
+.footer-placeholder {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cell-left{
+    width: 50%;
+    text-align: right;
+    display: inline-block;
+}
+.cell-right{
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+}
+
+.box-inner{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width:600px;
+    height: 400px;
+    transform: translateX(-50%) translateY(-50%);
+    border-color: green;
+    border-width: 1px;
+    border-style: dashed;
+}
+.box-inner > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+ul > li{
+    line-height: 30px;
+}
